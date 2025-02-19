@@ -2,8 +2,23 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, SpotLight } from "@react-three/drei";
-import LaptopModel from "./LaptopModel";
+import { useGLTF } from '@react-three/drei';
+// import LaptopModel from "./LaptopModel";
 import "./Hero.css";
+
+//  function Model(props) {
+//   const { nodes, materials } = useGLTF('/laptop.glb')
+//   return (
+//     <group {...props} dispose={null}>
+//       <group position={[0.121, 0.007, 0]}>
+//         <mesh geometry={nodes.Object_11.geometry} material={materials.MacBookPro} />
+//         <mesh geometry={nodes.Object_14.geometry} material={materials.MacBookPro} />
+//       </group>
+//       <mesh geometry={nodes.Object_8.geometry} material={materials.MacBookPro} />
+//     </group>
+//   )
+// }
+
 
 function Hero() {
   return (
@@ -49,7 +64,8 @@ function Hero() {
           <SpotLight position={[0, 5, 5]} angle={0.3} intensity={2} penumbra={1} castShadow />
 
           {/* Laptop model */}
-          <LaptopModel />
+          {/* <LaptopModel /> */}
+          {/* <Model /> */}
 
           <OrbitControls enableZoom={false} />
         </Canvas>

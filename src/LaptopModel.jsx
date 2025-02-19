@@ -2,6 +2,9 @@ import React, { useRef } from 'react';
 import { useGLTF } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 
+ 
+
+
 const LaptopModel = () => {
   const model = useGLTF('/models/laptop.glb');
   const ref = useRef();
@@ -23,6 +26,8 @@ const LaptopModel = () => {
       receiveShadow
       position={[0, -1, 0]}  // Adjust position if needed
     />
+
+    
   );
 };
 
