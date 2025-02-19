@@ -1,0 +1,21 @@
+/* src/About.css */
+.about {
+    padding: 60px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    color: #ffd700;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 15px;
+  }
+  
